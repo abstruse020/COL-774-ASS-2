@@ -1,0 +1,17 @@
+
+
+
+
+optimization finished, #iter = 9820
+nu = 0.022865
+obj = -53.674532, rho = 1.624403
+nSV = 233, nBSV = 23
+Total nSV = 233
+Accuracy = 99.9% (3996/4000) (classification)
+.*.*
+optimization finished, #iter = 2000
+nu = 1.000000
+obj = -194.999850, rho = 0.000421
+nSV = 4000, nBSV = 4000
+Total nSV = 4000
+Accuracy = 100% (4000/4000) (classification)

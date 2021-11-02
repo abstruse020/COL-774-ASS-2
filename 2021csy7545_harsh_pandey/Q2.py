@@ -6,6 +6,8 @@ import datetime
 import pandas as pd
 import statistics
 from math import floor
+import sys
+
 
 #%%
 
@@ -489,26 +491,31 @@ def main(train_path, test_path, classify, part):
     print("------------------- END ---------------------")
     return None
 #%%
+##Initializations ----
 #train_path = sys.argv[1]
 #test_path = sys.argv[2]
 #classify = sys.argv[3]
 #part = sys.argv[4]
-train_path = '~/IITD/COL774-ML/Assignment2/Q2/train.csv'
-test_path = '~/IITD/COL774-ML/Assignment2/Q2/test.csv'
-classify = '0'
-part = 'a'
+# train_path = '~/IITD/COL774-ML/Assignment2/Q2/train.csv'
+# test_path = '~/IITD/COL774-ML/Assignment2/Q2/test.csv'
+# classify = '0'
+# part = 'a'
 d = 5
 
 #%%
-main(train_path, test_path, classify, part)
-main(train_path, test_path, classify, 'b')
-main(train_path, test_path, classify, 'c')
-main(train_path, test_path, '1', 'a')
-main(train_path, test_path, '1', 'b')
-main(train_path, test_path, '1', 'c')
+# main(train_path, test_path, classify, part)
+# main(train_path, test_path, classify, 'b')
+# main(train_path, test_path, classify, 'c')
+# main(train_path, test_path, '1', 'a')
+# main(train_path, test_path, '1', 'b')
+# main(train_path, test_path, '1', 'c')
 #main(train_path, test_path, '1', 'd')
 
 
 #%%
-# if __name__ == "__main__":
-    # main()
+if __name__ == "__main__":
+    train_path = sys.argv[1]
+    test_path = sys.argv[2]
+    classify = sys.argv[3]
+    part = sys.argv[4]
+    main(train_path, test_path, classify, part)
